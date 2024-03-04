@@ -6,9 +6,8 @@ DerivedData/
 *.xcuserdatad
 xcuserdata/
 
-# Sensitive data
-GoogleService-Info.plist
-Info.plist
+# Sensitive data and configuration files
+*.plist
 
 # Logs and temporary files
 *.log
@@ -17,8 +16,6 @@ Info.plist
 # Xcode
 .DS_Store
 *.swp
-xcuserdata/
-DerivedData/
 
 # Build artifacts
 /build/

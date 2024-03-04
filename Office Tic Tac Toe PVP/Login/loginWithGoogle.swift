@@ -12,7 +12,7 @@ import FirebaseAuth
 import GoogleSignInSwift
 
 class loginWithGoogle: UIViewController{
-
+    
     
     @IBOutlet var emailTF: UITextField!
     @IBOutlet var passwordTF: UITextField!
@@ -60,7 +60,7 @@ class loginWithGoogle: UIViewController{
             //            print("THE REGISTERED USER IS -> \(registerUserRequest)")
             print("YOUR GOOGLE EMAIL IS: \(user.profile?.email ?? "no email")")
             print("YOUR GOOGLE NAME IS: \(user.profile?.name ?? "no name")")
-//            print("THE GOOGLE Image IS \(user.profile?.hasImage)")
+            //            print("THE GOOGLE Image IS \(user.profile?.hasImage)")
             
             let db = Firestore.firestore()
             let usersCollection = db.collection("users") // Replace with the name of your collection
@@ -104,7 +104,7 @@ class loginWithGoogle: UIViewController{
                             // Email doesn't exist in Firestore, register the user
                             print("Email doesn't exist in Firestore")
                             authService.shared.registerGoolgleUser(with: updatedRegisterUserRequest) { [weak self] wasRegistered, error in
-//                            authService.shared.registerUser(with: updatedRegisterUserRequest) { [weak self] wasRegistered, error in
+                                //                            authService.shared.registerUser(with: updatedRegisterUserRequest) { [weak self] wasRegistered, error in
                                 guard let self = self else { return }
                                 
                                 if let error = error {
@@ -119,7 +119,7 @@ class loginWithGoogle: UIViewController{
                                         self.performSegue(withIdentifier: "loginToHomepage", sender: nil)
                                     }
                                     print("how many times are we seguing")
-            
+                                    
                                 } else {
                                     print("Error registering user in Firestore")
                                 }
@@ -134,18 +134,18 @@ class loginWithGoogle: UIViewController{
     
     @IBAction func loginButton(_ sender: UIButton) {
         let loginRequest = loginUserRequest(email: self.emailTF.text ?? "",
-                                                    password: self.passwordTF.text ?? "")
-                
+                                            password: self.passwordTF.text ?? "")
+        
         //check email
         if !validator.isValidEmail(for: loginRequest.email){
-//                  AlertCenter.showInvalidEmailAlert(on: self)
+            //                  AlertCenter.showInvalidEmailAlert(on: self)
             print("invalid email")
             return
         }
         
         //check password
         if !validator.isPasswordValid(for: loginRequest.password){
-//                  AlertCenter.showInvalidPasswordAlert(on: self)
+            //                  AlertCenter.showInvalidPasswordAlert(on: self)
             print("invalid passsword")
             return
         }
@@ -153,7 +153,7 @@ class loginWithGoogle: UIViewController{
         authService.shared.signIn(with: loginRequest) { [weak self] error in
             guard let self = self else {return}//stops retain cycles
             if let error = error {
-//                      AlertCenter.showSignInErrorAlert(on: self, with: error)
+                //                      AlertCenter.showSignInErrorAlert(on: self, with: error)
                 print("error signing into firestore")
                 return
             }
@@ -164,10 +164,8 @@ class loginWithGoogle: UIViewController{
                 print("we have an error with auth")
             }
         }
-                
-            }
+        
     }
-    
-    
+}
 
 
