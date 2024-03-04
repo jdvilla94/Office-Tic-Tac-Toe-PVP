@@ -1,0 +1,852 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		370F20C52B8501AA00D743D3 /* gameIDInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 370F20C42B8501AA00D743D3 /* gameIDInfo.swift */; };
+		370F20C72B851CEC00D743D3 /* playerUIDS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 370F20C62B851CEC00D743D3 /* playerUIDS.swift */; };
+		373DD2E82B756E93009021BB /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 373DD2E72B756E93009021BB /* GoogleService-Info.plist */; };
+		37505A4C2B754FBA008E56E7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37505A4B2B754FBA008E56E7 /* AppDelegate.swift */; };
+		37505A4E2B754FBA008E56E7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37505A4D2B754FBA008E56E7 /* SceneDelegate.swift */; };
+		37505A502B754FBA008E56E7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37505A4F2B754FBA008E56E7 /* ViewController.swift */; };
+		37505A532B754FBA008E56E7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 37505A512B754FBA008E56E7 /* Main.storyboard */; };
+		37505A552B754FBB008E56E7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 37505A542B754FBB008E56E7 /* Assets.xcassets */; };
+		37505A582B754FBB008E56E7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 37505A562B754FBB008E56E7 /* LaunchScreen.storyboard */; };
+		37505A632B754FBB008E56E7 /* Office_Tic_Tac_Toe_PVPTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37505A622B754FBB008E56E7 /* Office_Tic_Tac_Toe_PVPTests.swift */; };
+		37505A6D2B754FBB008E56E7 /* Office_Tic_Tac_Toe_PVPUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37505A6C2B754FBB008E56E7 /* Office_Tic_Tac_Toe_PVPUITests.swift */; };
+		37505A6F2B754FBB008E56E7 /* Office_Tic_Tac_Toe_PVPUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37505A6E2B754FBB008E56E7 /* Office_Tic_Tac_Toe_PVPUITestsLaunchTests.swift */; };
+		37505A7F2B7550D4008E56E7 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 37505A7E2B7550D4008E56E7 /* FirebaseAuth */; };
+		37505A812B7550D4008E56E7 /* FirebaseAuthCombine-Community in Frameworks */ = {isa = PBXBuildFile; productRef = 37505A802B7550D4008E56E7 /* FirebaseAuthCombine-Community */; };
+		37505A832B7550D4008E56E7 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 37505A822B7550D4008E56E7 /* FirebaseFirestore */; };
+		37505A852B7550D4008E56E7 /* FirebaseFirestoreCombine-Community in Frameworks */ = {isa = PBXBuildFile; productRef = 37505A842B7550D4008E56E7 /* FirebaseFirestoreCombine-Community */; };
+		37505A872B7550D4008E56E7 /* FirebaseFirestoreSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 37505A862B7550D4008E56E7 /* FirebaseFirestoreSwift */; };
+		37505A892B7550D4008E56E7 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 37505A882B7550D4008E56E7 /* FirebaseStorage */; };
+		37505A8B2B7550D4008E56E7 /* FirebaseStorageCombine-Community in Frameworks */ = {isa = PBXBuildFile; productRef = 37505A8A2B7550D4008E56E7 /* FirebaseStorageCombine-Community */; };
+		37505A902B755462008E56E7 /* GoogleSignIn in Frameworks */ = {isa = PBXBuildFile; productRef = 37505A8F2B755462008E56E7 /* GoogleSignIn */; };
+		37505A922B755462008E56E7 /* GoogleSignInSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 37505A912B755462008E56E7 /* GoogleSignInSwift */; };
+		37505A952B755BA1008E56E7 /* loginWithGoogle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37505A942B755BA1008E56E7 /* loginWithGoogle.swift */; };
+		37505A982B755D27008E56E7 /* registerUserRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37505A972B755D27008E56E7 /* registerUserRequest.swift */; };
+		37505A9A2B755D6C008E56E7 /* authService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37505A992B755D6C008E56E7 /* authService.swift */; };
+		3753C7952B7C109000BE289A /* validation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3753C7942B7C109000BE289A /* validation.swift */; };
+		3753C7972B7C129F00BE289A /* loginUserRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3753C7962B7C129F00BE289A /* loginUserRequest.swift */; };
+		3753C7992B7C68E300BE289A /* nameAndUID.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3753C7982B7C68E300BE289A /* nameAndUID.swift */; };
+		3753C79B2B7D0EA800BE289A /* friendInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3753C79A2B7D0EA800BE289A /* friendInfo.swift */; };
+		3753C79D2B7EA73300BE289A /* newUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3753C79C2B7EA73300BE289A /* newUser.swift */; };
+		3753C7A52B82F76D00BE289A /* secondNotificationsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3753C7A42B82F76D00BE289A /* secondNotificationsCell.swift */; };
+		376BF4AF2B7A81D500BEEE1D /* homePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 376BF4AE2B7A81D500BEEE1D /* homePage.swift */; };
+		376BF4B12B7A8C4600BEEE1D /* user.swift in Sources */ = {isa = PBXBuildFile; fileRef = 376BF4B02B7A8C4600BEEE1D /* user.swift */; };
+		376BF4B32B7AB0E500BEEE1D /* sideMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 376BF4B22B7AB0E500BEEE1D /* sideMenu.swift */; };
+		376BF4B52B7B24A600BEEE1D /* notifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = 376BF4B42B7B24A600BEEE1D /* notifications.swift */; };
+		376BF4B82B7B252700BEEE1D /* notificationsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 376BF4B72B7B252700BEEE1D /* notificationsCell.swift */; };
+		376BF4BA2B7B273800BEEE1D /* gameBoard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 376BF4B92B7B273800BEEE1D /* gameBoard.swift */; };
+		376BF4BC2B7BC6D800BEEE1D /* newGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 376BF4BB2B7BC6D800BEEE1D /* newGame.swift */; };
+		376BF4BE2B7BCAEA00BEEE1D /* newGameCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 376BF4BD2B7BCAEA00BEEE1D /* newGameCell.swift */; };
+		376BF4C02B7BCBD100BEEE1D /* loadingWaitingForGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 376BF4BF2B7BCBD100BEEE1D /* loadingWaitingForGame.swift */; };
+		376BF4C22B7BCCEE00BEEE1D /* searchNewFriends.swift in Sources */ = {isa = PBXBuildFile; fileRef = 376BF4C12B7BCCEE00BEEE1D /* searchNewFriends.swift */; };
+		376BF4C42B7BCD7C00BEEE1D /* searchNewfFriendsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 376BF4C32B7BCD7C00BEEE1D /* searchNewfFriendsCell.swift */; };
+		376BF4C62B7BE86900BEEE1D /* createAccount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 376BF4C52B7BE86900BEEE1D /* createAccount.swift */; };
+		376BF4C82B7BE93500BEEE1D /* officeImages.swift in Sources */ = {isa = PBXBuildFile; fileRef = 376BF4C72B7BE93500BEEE1D /* officeImages.swift */; };
+		376BF4CA2B7BF3DC00BEEE1D /* theOfficeImages.swift in Sources */ = {isa = PBXBuildFile; fileRef = 376BF4C92B7BF3DC00BEEE1D /* theOfficeImages.swift */; };
+		376BF4CC2B7BF3FD00BEEE1D /* theOfficeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 376BF4CB2B7BF3FD00BEEE1D /* theOfficeCell.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		37505A5F2B754FBB008E56E7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 37505A402B754FBA008E56E7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 37505A472B754FBA008E56E7;
+			remoteInfo = "Office Tic Tac Toe PVP";
+		};
+		37505A692B754FBB008E56E7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 37505A402B754FBA008E56E7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 37505A472B754FBA008E56E7;
+			remoteInfo = "Office Tic Tac Toe PVP";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		370F20C42B8501AA00D743D3 /* gameIDInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = gameIDInfo.swift; sourceTree = "<group>"; };
+		370F20C62B851CEC00D743D3 /* playerUIDS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = playerUIDS.swift; sourceTree = "<group>"; };
+		373DD2E72B756E93009021BB /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		37505A482B754FBA008E56E7 /* Office Tic Tac Toe PVP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Office Tic Tac Toe PVP.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		37505A4B2B754FBA008E56E7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		37505A4D2B754FBA008E56E7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		37505A4F2B754FBA008E56E7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		37505A522B754FBA008E56E7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		37505A542B754FBB008E56E7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		37505A572B754FBB008E56E7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		37505A592B754FBB008E56E7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		37505A5E2B754FBB008E56E7 /* Office Tic Tac Toe PVPTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Office Tic Tac Toe PVPTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		37505A622B754FBB008E56E7 /* Office_Tic_Tac_Toe_PVPTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Office_Tic_Tac_Toe_PVPTests.swift; sourceTree = "<group>"; };
+		37505A682B754FBB008E56E7 /* Office Tic Tac Toe PVPUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Office Tic Tac Toe PVPUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		37505A6C2B754FBB008E56E7 /* Office_Tic_Tac_Toe_PVPUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Office_Tic_Tac_Toe_PVPUITests.swift; sourceTree = "<group>"; };
+		37505A6E2B754FBB008E56E7 /* Office_Tic_Tac_Toe_PVPUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Office_Tic_Tac_Toe_PVPUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		37505A942B755BA1008E56E7 /* loginWithGoogle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = loginWithGoogle.swift; sourceTree = "<group>"; };
+		37505A972B755D27008E56E7 /* registerUserRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = registerUserRequest.swift; sourceTree = "<group>"; };
+		37505A992B755D6C008E56E7 /* authService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = authService.swift; sourceTree = "<group>"; };
+		3753C7942B7C109000BE289A /* validation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = validation.swift; sourceTree = "<group>"; };
+		3753C7962B7C129F00BE289A /* loginUserRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = loginUserRequest.swift; sourceTree = "<group>"; };
+		3753C7982B7C68E300BE289A /* nameAndUID.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = nameAndUID.swift; sourceTree = "<group>"; };
+		3753C79A2B7D0EA800BE289A /* friendInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = friendInfo.swift; sourceTree = "<group>"; };
+		3753C79C2B7EA73300BE289A /* newUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = newUser.swift; sourceTree = "<group>"; };
+		3753C7A42B82F76D00BE289A /* secondNotificationsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = secondNotificationsCell.swift; sourceTree = "<group>"; };
+		376BF4AE2B7A81D500BEEE1D /* homePage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = homePage.swift; sourceTree = "<group>"; };
+		376BF4B02B7A8C4600BEEE1D /* user.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = user.swift; sourceTree = "<group>"; };
+		376BF4B22B7AB0E500BEEE1D /* sideMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = sideMenu.swift; sourceTree = "<group>"; };
+		376BF4B42B7B24A600BEEE1D /* notifications.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = notifications.swift; sourceTree = "<group>"; };
+		376BF4B72B7B252700BEEE1D /* notificationsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = notificationsCell.swift; sourceTree = "<group>"; };
+		376BF4B92B7B273800BEEE1D /* gameBoard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = gameBoard.swift; sourceTree = "<group>"; };
+		376BF4BB2B7BC6D800BEEE1D /* newGame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = newGame.swift; sourceTree = "<group>"; };
+		376BF4BD2B7BCAEA00BEEE1D /* newGameCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = newGameCell.swift; sourceTree = "<group>"; };
+		376BF4BF2B7BCBD100BEEE1D /* loadingWaitingForGame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = loadingWaitingForGame.swift; sourceTree = "<group>"; };
+		376BF4C12B7BCCEE00BEEE1D /* searchNewFriends.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = searchNewFriends.swift; sourceTree = "<group>"; };
+		376BF4C32B7BCD7C00BEEE1D /* searchNewfFriendsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = searchNewfFriendsCell.swift; sourceTree = "<group>"; };
+		376BF4C52B7BE86900BEEE1D /* createAccount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = createAccount.swift; sourceTree = "<group>"; };
+		376BF4C72B7BE93500BEEE1D /* officeImages.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = officeImages.swift; sourceTree = "<group>"; };
+		376BF4C92B7BF3DC00BEEE1D /* theOfficeImages.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = theOfficeImages.swift; sourceTree = "<group>"; };
+		376BF4CB2B7BF3FD00BEEE1D /* theOfficeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = theOfficeCell.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		37505A452B754FBA008E56E7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				37505A922B755462008E56E7 /* GoogleSignInSwift in Frameworks */,
+				37505A872B7550D4008E56E7 /* FirebaseFirestoreSwift in Frameworks */,
+				37505A902B755462008E56E7 /* GoogleSignIn in Frameworks */,
+				37505A8B2B7550D4008E56E7 /* FirebaseStorageCombine-Community in Frameworks */,
+				37505A7F2B7550D4008E56E7 /* FirebaseAuth in Frameworks */,
+				37505A852B7550D4008E56E7 /* FirebaseFirestoreCombine-Community in Frameworks */,
+				37505A812B7550D4008E56E7 /* FirebaseAuthCombine-Community in Frameworks */,
+				37505A832B7550D4008E56E7 /* FirebaseFirestore in Frameworks */,
+				37505A892B7550D4008E56E7 /* FirebaseStorage in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		37505A5B2B754FBB008E56E7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		37505A652B754FBB008E56E7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		37505A3F2B754FBA008E56E7 = {
+			isa = PBXGroup;
+			children = (
+				37505A4A2B754FBA008E56E7 /* Office Tic Tac Toe PVP */,
+				37505A612B754FBB008E56E7 /* Office Tic Tac Toe PVPTests */,
+				37505A6B2B754FBB008E56E7 /* Office Tic Tac Toe PVPUITests */,
+				37505A492B754FBA008E56E7 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		37505A492B754FBA008E56E7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				37505A482B754FBA008E56E7 /* Office Tic Tac Toe PVP.app */,
+				37505A5E2B754FBB008E56E7 /* Office Tic Tac Toe PVPTests.xctest */,
+				37505A682B754FBB008E56E7 /* Office Tic Tac Toe PVPUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		37505A4A2B754FBA008E56E7 /* Office Tic Tac Toe PVP */ = {
+			isa = PBXGroup;
+			children = (
+				376BF4B62B7B24FB00BEEE1D /* Models */,
+				37505A962B755CF4008E56E7 /* Authentication */,
+				37505A932B755B79008E56E7 /* Login */,
+				376BF4AD2B7A81B800BEEE1D /* Home Page */,
+				37505A4B2B754FBA008E56E7 /* AppDelegate.swift */,
+				37505A4D2B754FBA008E56E7 /* SceneDelegate.swift */,
+				37505A4F2B754FBA008E56E7 /* ViewController.swift */,
+				37505A512B754FBA008E56E7 /* Main.storyboard */,
+				37505A542B754FBB008E56E7 /* Assets.xcassets */,
+				37505A562B754FBB008E56E7 /* LaunchScreen.storyboard */,
+				373DD2E72B756E93009021BB /* GoogleService-Info.plist */,
+				37505A592B754FBB008E56E7 /* Info.plist */,
+			);
+			path = "Office Tic Tac Toe PVP";
+			sourceTree = "<group>";
+		};
+		37505A612B754FBB008E56E7 /* Office Tic Tac Toe PVPTests */ = {
+			isa = PBXGroup;
+			children = (
+				37505A622B754FBB008E56E7 /* Office_Tic_Tac_Toe_PVPTests.swift */,
+			);
+			path = "Office Tic Tac Toe PVPTests";
+			sourceTree = "<group>";
+		};
+		37505A6B2B754FBB008E56E7 /* Office Tic Tac Toe PVPUITests */ = {
+			isa = PBXGroup;
+			children = (
+				37505A6C2B754FBB008E56E7 /* Office_Tic_Tac_Toe_PVPUITests.swift */,
+				37505A6E2B754FBB008E56E7 /* Office_Tic_Tac_Toe_PVPUITestsLaunchTests.swift */,
+			);
+			path = "Office Tic Tac Toe PVPUITests";
+			sourceTree = "<group>";
+		};
+		37505A932B755B79008E56E7 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				37505A942B755BA1008E56E7 /* loginWithGoogle.swift */,
+				376BF4C52B7BE86900BEEE1D /* createAccount.swift */,
+				376BF4C92B7BF3DC00BEEE1D /* theOfficeImages.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		37505A962B755CF4008E56E7 /* Authentication */ = {
+			isa = PBXGroup;
+			children = (
+				37505A972B755D27008E56E7 /* registerUserRequest.swift */,
+				37505A992B755D6C008E56E7 /* authService.swift */,
+				376BF4B02B7A8C4600BEEE1D /* user.swift */,
+				3753C7942B7C109000BE289A /* validation.swift */,
+				3753C7962B7C129F00BE289A /* loginUserRequest.swift */,
+				3753C7982B7C68E300BE289A /* nameAndUID.swift */,
+				3753C79A2B7D0EA800BE289A /* friendInfo.swift */,
+				3753C79C2B7EA73300BE289A /* newUser.swift */,
+			);
+			path = Authentication;
+			sourceTree = "<group>";
+		};
+		376BF4AD2B7A81B800BEEE1D /* Home Page */ = {
+			isa = PBXGroup;
+			children = (
+				376BF4AE2B7A81D500BEEE1D /* homePage.swift */,
+				376BF4B22B7AB0E500BEEE1D /* sideMenu.swift */,
+				376BF4B42B7B24A600BEEE1D /* notifications.swift */,
+				376BF4B92B7B273800BEEE1D /* gameBoard.swift */,
+				376BF4BB2B7BC6D800BEEE1D /* newGame.swift */,
+				376BF4BF2B7BCBD100BEEE1D /* loadingWaitingForGame.swift */,
+				376BF4C12B7BCCEE00BEEE1D /* searchNewFriends.swift */,
+			);
+			path = "Home Page";
+			sourceTree = "<group>";
+		};
+		376BF4B62B7B24FB00BEEE1D /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				376BF4B72B7B252700BEEE1D /* notificationsCell.swift */,
+				376BF4BD2B7BCAEA00BEEE1D /* newGameCell.swift */,
+				376BF4C32B7BCD7C00BEEE1D /* searchNewfFriendsCell.swift */,
+				376BF4C72B7BE93500BEEE1D /* officeImages.swift */,
+				376BF4CB2B7BF3FD00BEEE1D /* theOfficeCell.swift */,
+				3753C7A42B82F76D00BE289A /* secondNotificationsCell.swift */,
+				370F20C42B8501AA00D743D3 /* gameIDInfo.swift */,
+				370F20C62B851CEC00D743D3 /* playerUIDS.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		37505A472B754FBA008E56E7 /* Office Tic Tac Toe PVP */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 37505A722B754FBB008E56E7 /* Build configuration list for PBXNativeTarget "Office Tic Tac Toe PVP" */;
+			buildPhases = (
+				37505A442B754FBA008E56E7 /* Sources */,
+				37505A452B754FBA008E56E7 /* Frameworks */,
+				37505A462B754FBA008E56E7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Office Tic Tac Toe PVP";
+			packageProductDependencies = (
+				37505A7E2B7550D4008E56E7 /* FirebaseAuth */,
+				37505A802B7550D4008E56E7 /* FirebaseAuthCombine-Community */,
+				37505A822B7550D4008E56E7 /* FirebaseFirestore */,
+				37505A842B7550D4008E56E7 /* FirebaseFirestoreCombine-Community */,
+				37505A862B7550D4008E56E7 /* FirebaseFirestoreSwift */,
+				37505A882B7550D4008E56E7 /* FirebaseStorage */,
+				37505A8A2B7550D4008E56E7 /* FirebaseStorageCombine-Community */,
+				37505A8F2B755462008E56E7 /* GoogleSignIn */,
+				37505A912B755462008E56E7 /* GoogleSignInSwift */,
+			);
+			productName = "Office Tic Tac Toe PVP";
+			productReference = 37505A482B754FBA008E56E7 /* Office Tic Tac Toe PVP.app */;
+			productType = "com.apple.product-type.application";
+		};
+		37505A5D2B754FBB008E56E7 /* Office Tic Tac Toe PVPTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 37505A752B754FBB008E56E7 /* Build configuration list for PBXNativeTarget "Office Tic Tac Toe PVPTests" */;
+			buildPhases = (
+				37505A5A2B754FBB008E56E7 /* Sources */,
+				37505A5B2B754FBB008E56E7 /* Frameworks */,
+				37505A5C2B754FBB008E56E7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				37505A602B754FBB008E56E7 /* PBXTargetDependency */,
+			);
+			name = "Office Tic Tac Toe PVPTests";
+			productName = "Office Tic Tac Toe PVPTests";
+			productReference = 37505A5E2B754FBB008E56E7 /* Office Tic Tac Toe PVPTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		37505A672B754FBB008E56E7 /* Office Tic Tac Toe PVPUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 37505A782B754FBB008E56E7 /* Build configuration list for PBXNativeTarget "Office Tic Tac Toe PVPUITests" */;
+			buildPhases = (
+				37505A642B754FBB008E56E7 /* Sources */,
+				37505A652B754FBB008E56E7 /* Frameworks */,
+				37505A662B754FBB008E56E7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				37505A6A2B754FBB008E56E7 /* PBXTargetDependency */,
+			);
+			name = "Office Tic Tac Toe PVPUITests";
+			productName = "Office Tic Tac Toe PVPUITests";
+			productReference = 37505A682B754FBB008E56E7 /* Office Tic Tac Toe PVPUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		37505A402B754FBA008E56E7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					37505A472B754FBA008E56E7 = {
+						CreatedOnToolsVersion = 15.0.1;
+					};
+					37505A5D2B754FBB008E56E7 = {
+						CreatedOnToolsVersion = 15.0.1;
+						TestTargetID = 37505A472B754FBA008E56E7;
+					};
+					37505A672B754FBB008E56E7 = {
+						CreatedOnToolsVersion = 15.0.1;
+						TestTargetID = 37505A472B754FBA008E56E7;
+					};
+				};
+			};
+			buildConfigurationList = 37505A432B754FBA008E56E7 /* Build configuration list for PBXProject "Office Tic Tac Toe PVP" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 37505A3F2B754FBA008E56E7;
+			packageReferences = (
+				37505A7D2B7550D4008E56E7 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				37505A8E2B755462008E56E7 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */,
+			);
+			productRefGroup = 37505A492B754FBA008E56E7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				37505A472B754FBA008E56E7 /* Office Tic Tac Toe PVP */,
+				37505A5D2B754FBB008E56E7 /* Office Tic Tac Toe PVPTests */,
+				37505A672B754FBB008E56E7 /* Office Tic Tac Toe PVPUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		37505A462B754FBA008E56E7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				37505A582B754FBB008E56E7 /* LaunchScreen.storyboard in Resources */,
+				373DD2E82B756E93009021BB /* GoogleService-Info.plist in Resources */,
+				37505A552B754FBB008E56E7 /* Assets.xcassets in Resources */,
+				37505A532B754FBA008E56E7 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		37505A5C2B754FBB008E56E7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		37505A662B754FBB008E56E7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		37505A442B754FBA008E56E7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				376BF4BE2B7BCAEA00BEEE1D /* newGameCell.swift in Sources */,
+				376BF4B52B7B24A600BEEE1D /* notifications.swift in Sources */,
+				37505A502B754FBA008E56E7 /* ViewController.swift in Sources */,
+				376BF4CA2B7BF3DC00BEEE1D /* theOfficeImages.swift in Sources */,
+				37505A9A2B755D6C008E56E7 /* authService.swift in Sources */,
+				376BF4BC2B7BC6D800BEEE1D /* newGame.swift in Sources */,
+				370F20C52B8501AA00D743D3 /* gameIDInfo.swift in Sources */,
+				376BF4C62B7BE86900BEEE1D /* createAccount.swift in Sources */,
+				376BF4B32B7AB0E500BEEE1D /* sideMenu.swift in Sources */,
+				37505A4C2B754FBA008E56E7 /* AppDelegate.swift in Sources */,
+				3753C79D2B7EA73300BE289A /* newUser.swift in Sources */,
+				376BF4C02B7BCBD100BEEE1D /* loadingWaitingForGame.swift in Sources */,
+				3753C7972B7C129F00BE289A /* loginUserRequest.swift in Sources */,
+				376BF4B82B7B252700BEEE1D /* notificationsCell.swift in Sources */,
+				37505A952B755BA1008E56E7 /* loginWithGoogle.swift in Sources */,
+				376BF4B12B7A8C4600BEEE1D /* user.swift in Sources */,
+				376BF4CC2B7BF3FD00BEEE1D /* theOfficeCell.swift in Sources */,
+				376BF4BA2B7B273800BEEE1D /* gameBoard.swift in Sources */,
+				376BF4C22B7BCCEE00BEEE1D /* searchNewFriends.swift in Sources */,
+				3753C7992B7C68E300BE289A /* nameAndUID.swift in Sources */,
+				370F20C72B851CEC00D743D3 /* playerUIDS.swift in Sources */,
+				37505A4E2B754FBA008E56E7 /* SceneDelegate.swift in Sources */,
+				376BF4C42B7BCD7C00BEEE1D /* searchNewfFriendsCell.swift in Sources */,
+				3753C7A52B82F76D00BE289A /* secondNotificationsCell.swift in Sources */,
+				3753C79B2B7D0EA800BE289A /* friendInfo.swift in Sources */,
+				3753C7952B7C109000BE289A /* validation.swift in Sources */,
+				376BF4C82B7BE93500BEEE1D /* officeImages.swift in Sources */,
+				37505A982B755D27008E56E7 /* registerUserRequest.swift in Sources */,
+				376BF4AF2B7A81D500BEEE1D /* homePage.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		37505A5A2B754FBB008E56E7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				37505A632B754FBB008E56E7 /* Office_Tic_Tac_Toe_PVPTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		37505A642B754FBB008E56E7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				37505A6F2B754FBB008E56E7 /* Office_Tic_Tac_Toe_PVPUITestsLaunchTests.swift in Sources */,
+				37505A6D2B754FBB008E56E7 /* Office_Tic_Tac_Toe_PVPUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		37505A602B754FBB008E56E7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 37505A472B754FBA008E56E7 /* Office Tic Tac Toe PVP */;
+			targetProxy = 37505A5F2B754FBB008E56E7 /* PBXContainerItemProxy */;
+		};
+		37505A6A2B754FBB008E56E7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 37505A472B754FBA008E56E7 /* Office Tic Tac Toe PVP */;
+			targetProxy = 37505A692B754FBB008E56E7 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		37505A512B754FBA008E56E7 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				37505A522B754FBA008E56E7 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		37505A562B754FBB008E56E7 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				37505A572B754FBB008E56E7 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		37505A702B754FBB008E56E7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		37505A712B754FBB008E56E7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		37505A732B754FBB008E56E7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 87CQWGCKW5;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Office Tic Tac Toe PVP/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "JDVINC.Office-Tic-Tac-Toe-PVP";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		37505A742B754FBB008E56E7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 87CQWGCKW5;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Office Tic Tac Toe PVP/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "JDVINC.Office-Tic-Tac-Toe-PVP";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		37505A762B754FBB008E56E7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 87CQWGCKW5;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "JDVINC.Office-Tic-Tac-Toe-PVPTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Office Tic Tac Toe PVP.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Office Tic Tac Toe PVP";
+			};
+			name = Debug;
+		};
+		37505A772B754FBB008E56E7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 87CQWGCKW5;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "JDVINC.Office-Tic-Tac-Toe-PVPTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Office Tic Tac Toe PVP.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Office Tic Tac Toe PVP";
+			};
+			name = Release;
+		};
+		37505A792B754FBB008E56E7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 87CQWGCKW5;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "JDVINC.Office-Tic-Tac-Toe-PVPUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Office Tic Tac Toe PVP";
+			};
+			name = Debug;
+		};
+		37505A7A2B754FBB008E56E7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 87CQWGCKW5;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "JDVINC.Office-Tic-Tac-Toe-PVPUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Office Tic Tac Toe PVP";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		37505A432B754FBA008E56E7 /* Build configuration list for PBXProject "Office Tic Tac Toe PVP" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				37505A702B754FBB008E56E7 /* Debug */,
+				37505A712B754FBB008E56E7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		37505A722B754FBB008E56E7 /* Build configuration list for PBXNativeTarget "Office Tic Tac Toe PVP" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				37505A732B754FBB008E56E7 /* Debug */,
+				37505A742B754FBB008E56E7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		37505A752B754FBB008E56E7 /* Build configuration list for PBXNativeTarget "Office Tic Tac Toe PVPTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				37505A762B754FBB008E56E7 /* Debug */,
+				37505A772B754FBB008E56E7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		37505A782B754FBB008E56E7 /* Build configuration list for PBXNativeTarget "Office Tic Tac Toe PVPUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				37505A792B754FBB008E56E7 /* Debug */,
+				37505A7A2B754FBB008E56E7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		37505A7D2B7550D4008E56E7 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 10.21.0;
+			};
+		};
+		37505A8E2B755462008E56E7 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/google/GoogleSignIn-iOS";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		37505A7E2B7550D4008E56E7 /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 37505A7D2B7550D4008E56E7 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		37505A802B7550D4008E56E7 /* FirebaseAuthCombine-Community */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 37505A7D2B7550D4008E56E7 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = "FirebaseAuthCombine-Community";
+		};
+		37505A822B7550D4008E56E7 /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 37505A7D2B7550D4008E56E7 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+		37505A842B7550D4008E56E7 /* FirebaseFirestoreCombine-Community */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 37505A7D2B7550D4008E56E7 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = "FirebaseFirestoreCombine-Community";
+		};
+		37505A862B7550D4008E56E7 /* FirebaseFirestoreSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 37505A7D2B7550D4008E56E7 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestoreSwift;
+		};
+		37505A882B7550D4008E56E7 /* FirebaseStorage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 37505A7D2B7550D4008E56E7 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseStorage;
+		};
+		37505A8A2B7550D4008E56E7 /* FirebaseStorageCombine-Community */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 37505A7D2B7550D4008E56E7 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = "FirebaseStorageCombine-Community";
+		};
+		37505A8F2B755462008E56E7 /* GoogleSignIn */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 37505A8E2B755462008E56E7 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */;
+			productName = GoogleSignIn;
+		};
+		37505A912B755462008E56E7 /* GoogleSignInSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 37505A8E2B755462008E56E7 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */;
+			productName = GoogleSignInSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 37505A402B754FBA008E56E7 /* Project object */;
+}

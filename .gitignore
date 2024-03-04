@@ -1,0 +1,25 @@
+# Xcode
+build/
+DerivedData/
+
+# User-specific Xcode settings
+*.xcuserdatad
+xcuserdata/
+
+# Sensitive data
+GoogleService-Info.plist
+Info.plist
+
+# Logs and temporary files
+*.log
+*.tmp
+
+# Xcode
+.DS_Store
+*.swp
+xcuserdata/
+DerivedData/
+
+# Build artifacts
+/build/
+*.xcodeproj/xcuserdata/
